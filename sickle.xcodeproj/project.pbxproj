@@ -6,11 +6,71 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXFileReference section */
+		83D19B631A09266900FC2996 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		83D19B641A09266900FC2996 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		83D19B651A09266900FC2996 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		83D19B661A09266900FC2996 /* sickle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = sickle.xcodeproj; sourceTree = "<group>"; };
+		83D19B691A09266900FC2996 /* sickle.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sickle.xml; sourceTree = "<group>"; };
+		83D19B6B1A09266900FC2996 /* kseq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kseq.h; sourceTree = "<group>"; };
+		83D19B6C1A09266900FC2996 /* print_record.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = print_record.c; sourceTree = "<group>"; };
+		83D19B6D1A09266900FC2996 /* print_record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = print_record.h; sourceTree = "<group>"; };
+		83D19B6E1A09266900FC2996 /* sickle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sickle.c; sourceTree = "<group>"; };
+		83D19B6F1A09266900FC2996 /* sickle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sickle.h; sourceTree = "<group>"; };
+		83D19B701A09266900FC2996 /* sliding.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sliding.c; sourceTree = "<group>"; };
+		83D19B711A09266900FC2996 /* trim_paired.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trim_paired.c; sourceTree = "<group>"; };
+		83D19B721A09266900FC2996 /* trim_single.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trim_single.c; sourceTree = "<group>"; };
+		83D19B741A09266900FC2996 /* test.f.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.f.fastq; sourceTree = "<group>"; };
+		83D19B751A09266900FC2996 /* test.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.fastq; sourceTree = "<group>"; };
+		83D19B761A09266900FC2996 /* test.r.fastq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.r.fastq; sourceTree = "<group>"; };
+		83D19B771A0926CD00FC2996 /* sicklecommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sicklecommand.cpp; sourceTree = "<group>"; };
+		83D19B781A0926CD00FC2996 /* sicklecommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sicklecommand.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		835992CD1A09258300C4C5D5 = {
 			isa = PBXGroup;
 			children = (
+				83D19B631A09266900FC2996 /* LICENSE */,
+				83D19B641A09266900FC2996 /* Makefile */,
+				83D19B651A09266900FC2996 /* README.md */,
+				83D19B661A09266900FC2996 /* sickle.xcodeproj */,
+				83D19B691A09266900FC2996 /* sickle.xml */,
+				83D19B6A1A09266900FC2996 /* src */,
+				83D19B731A09266900FC2996 /* test */,
 			);
+			sourceTree = "<group>";
+		};
+		83D19B671A09266900FC2996 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83D19B6A1A09266900FC2996 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				83D19B771A0926CD00FC2996 /* sicklecommand.cpp */,
+				83D19B781A0926CD00FC2996 /* sicklecommand.h */,
+				83D19B6B1A09266900FC2996 /* kseq.h */,
+				83D19B6C1A09266900FC2996 /* print_record.c */,
+				83D19B6D1A09266900FC2996 /* print_record.h */,
+				83D19B6E1A09266900FC2996 /* sickle.c */,
+				83D19B6F1A09266900FC2996 /* sickle.h */,
+				83D19B701A09266900FC2996 /* sliding.c */,
+				83D19B711A09266900FC2996 /* trim_paired.c */,
+				83D19B721A09266900FC2996 /* trim_single.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		83D19B731A09266900FC2996 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				83D19B741A09266900FC2996 /* test.f.fastq */,
+				83D19B751A09266900FC2996 /* test.fastq */,
+				83D19B761A09266900FC2996 /* test.r.fastq */,
+			);
+			path = test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -52,6 +112,12 @@
 			);
 			mainGroup = 835992CD1A09258300C4C5D5;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 83D19B671A09266900FC2996 /* Products */;
+					ProjectRef = 83D19B661A09266900FC2996 /* sickle.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				835992D21A09258300C4C5D5 /* sickle */,
@@ -174,6 +240,7 @@
 				835992D71A09258300C4C5D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
